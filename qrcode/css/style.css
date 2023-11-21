@@ -1,0 +1,13 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+#wrapper {
+    background-color: hsl(212, 45%, 89%);
+    
+}
+
+#container {
+    background-color: hsl(0, 0%, 100%);
+    width: 1440px;
+}

@@ -1,0 +1,71 @@
+:root {
+	--raisin-black: #161925ff;
+	--delft-blue: #23395bff;
+	--ucla-blue: #406e8eff;
+	--powder-blue: #8ea8c3ff;
+}
+
+
+
+* {
+	font-family: 'Oswald', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.wrapper header {
+	width: 100vw;
+	background-color: var(--raisin-black);
+	color: white;
+	font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+	text-align: center;
+	padding: 25px;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+table {
+	width:80vw;
+	text-align: center;
+	margin-top: 25px;
+	border: 5px solid var(--delft-blue);
+	border-collapse: collapse;
+}
+
+table caption {
+	font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
+}
+
+table thead th {
+	background: var(--delft-blue);
+	font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+	color: white;
+}
+
+table tbody tr {
+	font-size: clamp(0.80rem, 0.40rem + 2.5vw, 1.5rem);
+}
+table tr:nth-of-type(odd){
+	background-color: var(--ucla-blue);
+}
+
+table tr:nth-of-type(even){
+	background-color: var(--powder-blue);
+}
+
+table a:link {
+	color: black;
+}
+
+table a:visited {
+	color: black;
+}
+
+table a:hover {
+	color: white;
+}

@@ -11,15 +11,26 @@
 	font-family: 'Oswald', sans-serif;
 	padding: 0px;
 	margin: 0px;
+	/*hide scrollbar IE, Edge, Firefox*/
+	-ms-overflow-style: none; /* UE, Edge */
+	scrollbar-width: non; /* Firefox */
+}
+
+/* hides scrollbar for Chrome, Safari, Opera */
+*::-webkit-scrollbar {
+	display: none;
 }
 
 .wrapper header {
 	width: 100vw;
 	background-color: var(--raisin-black);
-	color: white;
-	font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
 	text-align: center;
+}
+
+.wrapper h1 {
 	padding: 25px;
+	color: white;
+	font-size: clamp(2rem, 1rem + 2.5vw, 4rem);
 }
 
 main {

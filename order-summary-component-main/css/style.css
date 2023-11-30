@@ -46,7 +46,7 @@ body {
 
 .container {
     width: clamp(20.8rem, calc(20vw + 15vw), 28rem);
-    height: clamp(35.5rem, calc(35.5rem + 5vh), 43rem);
+    height: clamp(35.5rem, 80vh, 43rem);
     border-radius: 1.25rem;
 
     display: flex;

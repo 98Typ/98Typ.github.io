@@ -1,0 +1,203 @@
+:root {
+    /*Primary Colours*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /*Neutral Colours*/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    /*button and shadow colour */
+    --purple: hsl(245, 83%, 68%);
+    --purple-shadow: hsla(245, 83%, 68%, 0.30);
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0rem;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0rem;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--pale-blue);
+    
+}
+
+.container {
+    width: clamp(20.8rem, calc(20vw + 15vw), 28rem);
+    height: clamp(35.5rem, calc(35.5rem + 5vh), 43rem);
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 0rem 0.9rem 1rem var(--purple-shadow);
+}
+
+.banner {
+    width: 100%;
+    height: 32%;
+
+}
+
+.banner #img-banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 68%;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    background-color: white;
+}
+
+.content h2 {
+    margin: 0rem;
+
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content p {
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+    text-align: center;
+    line-height: 170%;
+
+    color: var(--desaturated-blue);
+}
+
+.payment-plan {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--very-pale-blue);
+}
+
+.payment-plan a {
+    color: var(--bright-blue);
+}
+
+.payment-plan a:visited {
+    color: var(--bright-blue);
+}
+
+.payment-plan a:active {
+    text-decoration: none;
+}
+
+.payment-plan .pp-icon-cost {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-plan .pp-icon-cost img {
+    padding-right: 1rem;
+    display:flex;
+    
+    float: left;
+}
+
+.pp-cost {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.pp-cost #annual-plan, #cost {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.payment-plan a:active {
+    text-decoration: none;
+
+    color: var(--purple);
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    border: 0;
+    border-radius: 1rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    background-color: var(--bright-blue);
+    color: white;
+
+    box-shadow: 0rem 0.9rem 1rem var(--purple-shadow);
+    /*245, 75%, 52%
+    244, 76%, 82%*/
+}
+
+button:active {
+    background-color: var(--purple);
+}
+
+.content #cancel {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    color: var(--desaturated-blue);
+}
+
+.content #cancel:active {
+    color: black;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center;
+     
+}
+
+footer a { color: hsl(228, 45%, 44%); 
+}
+
+
